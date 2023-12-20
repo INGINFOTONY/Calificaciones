@@ -1,0 +1,29 @@
+<h3>{{viewTitle}}</h3>
+
+
+<form action="/calificaciones" method="post" autocomplete="off">
+    <div class="form-group">
+        <label for="">Alumno</label>
+        <div class="form-group">
+        <select class="form-select" aria-label="Default select example" name="idAlumno" id="idAlumno">
+            <option value="1">Ejemplo Alumno 1</option>
+            <option value="2">Ejemplo Alumno 2</option>
+            <option value="3">Ejemplo Alumno 3</option>
+        </select>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Materia</label>
+        <input type="text" class="form-control" name="materia" placeholder="Nombre de la materia">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Calificacion</label>
+        <input type="text" class="form-control" name="calificacion" placeholder="Calificacion de la materia">
+    </div>
+    <br>
+    <div class="form-group">
+        <button type="submit" class="btn btn-dark"><i class="bi bi-database-add"></i>Enviar</button>
+    </div>
+</form>
