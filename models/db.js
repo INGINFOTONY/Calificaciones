@@ -1,6 +1,12 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1/proyectoFinalDB')
+require ('dotenv').config();
+
+
+const url = process.env.MONGODB_URL;
+
+
+mongoose.connect(url)
         .then(db => console.log('Base de datos conectada'))
         .catch(error => console.log(error));
 
